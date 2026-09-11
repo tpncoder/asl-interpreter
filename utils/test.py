@@ -21,7 +21,7 @@ import torch.nn as nn
 # ─────────────────────────────────────────────
 # 1. Configuration
 # ─────────────────────────────────────────────
-MODEL_PATH = "asl_model.pth"
+MODEL_PATH = "./asl_model.pth"
 LABEL_MAP_PATH = "label_map.json"
 NUM_LANDMARKS = 21
 COORDS_PER_LANDMARK = 3

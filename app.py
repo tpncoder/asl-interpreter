@@ -95,3 +95,7 @@ async def predict(request: LandmarkRequest):
         "letter": letter,
         "confidence": round(conf_val, 4)
     }
+
+@app.get("/health")
+async def health_check():
+    return {"status": "alive"}
