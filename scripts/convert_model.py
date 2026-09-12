@@ -19,12 +19,10 @@ class ASLNet(nn.Module):
     def forward(self, x):
         return self.network(x)
 
-# Load your trained PyTorch model
 model = ASLNet(input_dim=63, hidden_dim=128, num_classes=29)
 model.load_state_dict(torch.load("asl_model.pth", map_location="cpu"))
 model.eval()
 
-# Export to ONNX
 dummy_input = torch.randn(1, 63)
 torch.onnx.export(
     model,
@@ -35,4 +33,4 @@ torch.onnx.export(
     opset_version=11
 )
 
-print("✅ Successfully exported asl_model.onnx!")
+print("Successfully exported asl_model.onnx!")
