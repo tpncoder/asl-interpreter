@@ -55,7 +55,7 @@ asl-interpreter/
 
 The API will be available at `http://localhost:8000`
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### `POST /predict`
 Predict ASL letter from hand landmarks.
@@ -195,5 +195,3 @@ This project is open source and available under the MIT License.
 ## Support
 
 For issues or questions, please open an issue on GitHub.
-
----
